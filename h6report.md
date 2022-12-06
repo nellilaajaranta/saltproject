@@ -24,7 +24,9 @@ Loin /srv/salt/ -hakemistoon moduulille uuden kansion nimeltä **projekti**. Tä
 > `Gimp:`
 >   `pkg.installed`
 > `blender:
->   pkg.installed`
+>>   `pkg.installed`
+
+
 Sitten testasin toimiiko tämä moduuli komennolla:
 
 `sudo salt '*' state.apply projekti`
