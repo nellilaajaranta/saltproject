@@ -22,7 +22,8 @@ Sitten määrittelin minioneille masterin ip-osoitteen jotta ne osaavat ottaa yh
 Loin /srv/salt/ -hakemistoon moduulille uuden kansion nimeltä **projekti**. Tämän sisään loin nano-tekstieditorilla init.sls -tiedoston, johon määrittelin Gimpin asennuksen:
 
 > `Gimp:`
->   `pkg.installed`
+>>   `pkg.installed`
+>
 > `blender:
 >>   `pkg.installed`
 
