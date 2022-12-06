@@ -35,7 +35,7 @@ Sitten testasin toimiiko tämä moduuli komennolla:
 
 ![epäonnistunut tilan ajo](https://github.com/nellilaajaranta/saltproject/blob/main/photos/failedminion1.jpg)
 
-Komento ei onnistunut täysin. Gimp asentui mutta Blenderin kohdalla tuli virheilmoitus "dpkg was interrupted, you must manually run 'dpkg --configure -a' to correct the problem." molempien minioneiden kohdalla. Ajoin siis seuraavaksi komennon:
+Komento ei onnistunut täysin. Ensimmäisellä kerralla virtuaalikoneet kaatuivat ja asennus epäonnistui. Toisella kerralla Gimp asentui mutta Blenderin kohdalla tuli virheilmoitus "dpkg was interrupted, you must manually run 'dpkg --configure -a' to correct the problem." molempien minioneiden kohdalla. Ajoin siis seuraavaksi komennon:
 
 `sudo salt '*' cmd.run 'dpkg --configure -a'`
 
@@ -44,4 +44,8 @@ Komento meni onnistuneesti läpi, joten kokeilin uudeleen ajaa moduulin. Se onni
 ![minion1](https://github.com/nellilaajaranta/saltproject/blob/main/photos/minion1%20install.jpg)
 
 ![minion2](https://github.com/nellilaajaranta/saltproject/blob/main/photos/minion2%20install.jpg)
+
+Blender ei kuitenkaan käynnisty kummallakaan minionilla. Joudun selvittämään ongelmaa jatkossa.
+
+
 
