@@ -4,7 +4,7 @@ Tämä projekti liittyy Tero Karvisen [Palvelinten hallinta](https://terokarvine
 
 ## Projektin tarkoitus sekä ympäristö
 
-Tässä työversiossa tähtäimenä on luoda Salt-moduuli, joka asentaa kahdelle minion-koneelle Gimp -kuvankäsittelyohjelman sekä muuttaa oletusasetuksia.
+Tässä työversiossa tähtäimenä on luoda Salt-moduuli, joka asentaa kahdelle minion-koneelle Gimp -kuvankäsittelyohjelman sekä Blender -mallinnusohjelman. Myöhemmin jatkotyöstän projektia lisäämällä moduuliin Gimpin sekä Blenderin oletusasetuksien muokkauksia.
 Teen projektin VirtualBox-virtualisointiohjelmalla pyörivillä virtuaalikoneilla, jotka loin juuri tätä projektia varten.
 
 - Masterkone: Xubuntu 22.04.1
@@ -19,14 +19,19 @@ Sitten määrittelin minioneille masterin ip-osoitteen jotta ne osaavat ottaa yh
 
 ### Salt moduuli
 
-Loin /srv/salt/ -hakemistoon uuden kansion nimeltä gimp. Tämän sisään loin nano-tekstieditorilla init.sls -tiedoston, johon määrittelin Gimpin asennuksen:
+Loin /srv/salt/ -hakemistoon moduulille uuden kansion nimeltä **projekti**. Tämän sisään loin nano-tekstieditorilla init.sls -tiedoston, johon määrittelin Gimpin asennuksen:
 
 > `Gimp:`
->>   `pkg.installed`
-
+>   `pkg.installed`
+> `blender:
+>   pkg.installed`
 Sitten testasin toimiiko tämä moduuli komennolla:
 
-`sudo salt '*' state.apply gimp`
+`sudo salt '*' state.apply projekti`
+
+
+
+
 
 
 
