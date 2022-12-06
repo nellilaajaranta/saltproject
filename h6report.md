@@ -22,7 +22,7 @@ Sitten määrittelin minioneille masterin ip-osoitteen jotta ne osaavat ottaa yh
 Loin /srv/salt/ -hakemistoon uuden kansion nimeltä gimp. Tämän sisään loin nano-tekstieditorilla init.sls -tiedoston, johon määrittelin Gimpin asennuksen:
 
 > `Gimp:
->   pkg.installed`
+>>   pkg.installed`
 
 Sitten testasin toimiiko tämä moduuli komennolla:
 
