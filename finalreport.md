@@ -11,7 +11,7 @@ Teen projektin VirtualBox-virtualisointiohjelmalla pyörivillä virtuaalikoneill
 
 ## Projektikuvaus
 
-En kuvaa tässä tehtävässä kovin tarkasti Saltin asennusta ja käyttöönottoa, sillä se on kuvattu aikaisemmin tekemissäni tehtävissä (esim. [linkki h6-tehtävääni](https://wordpress.com/post/nellilaajaranta.wordpress.com/136), kotha c).
+En kuvaa tässä tehtävässä kovin tarkasti Saltin asennusta ja käyttöönottoa, sillä se on kuvattu aikaisemmin tekemissäni tehtävissä (esim. [linkki h6-tehtävääni](https://wordpress.com/post/nellilaajaranta.wordpress.com/136), kohta c).
 Salt master-servicen asensin master-koneeksi tarkoitetulle xUbuntu-koneelle, sekä Salt minion-servicen minoneiksi tarkoitetuille koneille.
 Sitten määrittelin minioneille masterin ip-osoitteen jotta ne osaavat ottaa yhteyden masteriin, sekä annoin minioneille yllä olevan listan mukaiset id:t. Tämän jälkeen uudelleenkäynnistin minion-koneiden minion-servicet ja hyväksyin minioneiden salt-keyt master-koneella.
 
